@@ -81,20 +81,21 @@ limitations under the License.
                     bibendum orci mi, ut consequat odio commodo at. In hac habitasse platea dictumst. Orci varius
                     natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
                     <div class = "About-buttons">
-                        <button class = "resume">Resume</button>
-                        <button class = "blog"><a href = "blog.html">Blog</a></button>
+                        <!--TODO: find a way to add responsiveness to the buttons, think about vertical layout with different size buttons-->
+                        <a href = "David Daraban CV_portfolio.pdf" target = "_blank"><button class = "resume">Resume</button></a>
+                        <a href = "blog.html"><button class = "blog">Blog</button></a>
                     </div>
             </div>
 
         </div>
 
+        <!--TODO: add skills and level with icon to each section-->
         <div id ="Skills" class = "section">
             <h3 class = "section-title">Skills</h3>
             <br>
             <div class = "tab">
                 <div class = "btn-group">
                     <!--Added <br> for data science and web dev, to make the buttons longer-->
-                    <!--TODO: add on click to button functions-->
                     <button class = "tablink active" onclick=showSkill("Game-dev");setActive(this)>Game Development</button>
                     <button class = "tablink" onclick=showSkill("Software-dev");setActive(this)>Software Development</button>
                     <button class = "tablink" onclick=showSkill("ML-dev");setActive(this)>Data Science <br> ML</button>
@@ -148,17 +149,18 @@ limitations under the License.
                     </div>
                 </div>
 
-                <div class="projects-button"><button type="button">View Portfolio</button></div>
+                <div class="projects-button"><a href = "projects.html"><button type="button">View Portfolio</button></a></div>
             </div>
         </div>
 
-        <!--TODO: createa  new page for portfolio-->
         <div id = "Projects" class = "section">
             <h3 class = "section-title">Projects</h3>
             <br>
-            <button>View Portfolio</button>
+            <a href = "projects.html"><button>View Portfolio</button></a>
         </div>
 
+
+        
         <div id="Contact">
             <h3 class="section-title">Contact</h3>
             <br>
