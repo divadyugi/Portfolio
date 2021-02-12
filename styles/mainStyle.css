@@ -581,4 +581,53 @@ ul.icons
 }
 
 
+/*********BLOG PAGE*********/
+.post-wrapper
+{
+    padding-top: 13rem;
+    max-width: 100%;
+}
+
+.post .date
+{
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(188,247,204,0.7);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+}
+
+.post .postTitle
+{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 28px;
+    color: #85909b;
+    margin: 0.5rem 0px;
+}
+
+.paragraph
+{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #85909b;
+    padding: 0.3rem 0px;
+}
+
+.firstParagraph
+{
+    border-left: 7px solid rgba(188,247,204,0.7);
+    padding-left: 2rem;
+    margin: 20px 0px 20px 0px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #85909b;
+    padding: 0.3rem 0px;
+}
+
+
+
 
