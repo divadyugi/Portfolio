@@ -1,0 +1,182 @@
+<!--  
+Copyright 2021 David Daraban
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Daraban Portfolio</title>
+    <link rel="styleSheet" type="text/css" href="styles/mainStyle.css"">
+    <script src="https://kit.fontawesome.com/7bed07af9f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+</head>
+<body>
+    
+    <!--Header-->
+    <div id="banner">
+        <h1 class = "banner-text">David Daraban
+        <div>Game Development + Software development</div></h1>
+    </div>
+
+    <!--Main wrapper for page content-->
+    <div class = "wrapper">
+        
+        <!--Side navigation bar-->
+        <div class="side-navbar ">
+            <ul class="side-navbar-elements hidden">
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+            <div id = "menuToggle" class = "">
+                <input type = "checkbox"/>
+    
+                <span></span>
+                <span></span>
+                <span></span>
+                
+                <ul id = "menu">
+                    <li><a href="#banner">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <!--About me section-->
+        <div id="About" class="section">
+            <h3 class="section-title">About</h3>
+            <br>
+            <div class="About-text-box">
+                <div class="About-top"><img src="/images/david.jfif"></div>
+                <div class="About-name">David Daraban</div>
+                <div class="About-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu orci nec nisi
+                    iaculis sodales vel eget libero. Proin turpis massa, consequat in finibus at, ullamcorper non risus.
+                    In non tempor nisl. Cras in tempus massa. Aenean at enim porta, imperdiet ipsum vel, elementum eros.
+                    Donec quis tempus odio, vitae semper orci. Quisque eu dui in lorem consectetur mollis. Ut non
+                    ultrices augue. Nunc at dapibus turpis, a malesuada ex. Fusce vestibulum congue mauris. Mauris
+                    bibendum orci mi, ut consequat odio commodo at. In hac habitasse platea dictumst. Orci varius
+                    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+                    <div class = "About-buttons">
+                        <button class = "resume">Resume</button>
+                        <button class = "blog"><a href = "blog.html">Blog</a></button>
+                    </div>
+            </div>
+
+        </div>
+
+        <div id ="Skills" class = "section">
+            <h3 class = "section-title">Skills</h3>
+            <br>
+            <div class = "tab">
+                <div class = "btn-group">
+                    <!--Added <br> for data science and web dev, to make the buttons longer-->
+                    <!--TODO: add on click to button functions-->
+                    <button class = "tablink active" onclick=showSkill("Game-dev");setActive(this)>Game Development</button>
+                    <button class = "tablink" onclick=showSkill("Software-dev");setActive(this)>Software Development</button>
+                    <button class = "tablink" onclick=showSkill("ML-dev");setActive(this)>Data Science <br> ML</button>
+                    <button class = "tablink" onclick=showSkill("Web-dev");setActive(this)>Web <br>Development</button>
+                </div>
+            </div>
+            <div class = "skill-wrapper">
+                <!--The individual skills for each tab-->
+                <!--Game dev skills-->
+                <div id = "Game-dev" class = "tab-content">
+                    <div class = "content-wrapper">
+                        <div class = "skill">C#</div>
+                        <div class = "skill">C++</div>
+                        <div class = "skill">Unity</div>
+                        <div class = "skill">Unreal</div>
+                        <div class = "skill">Placeholder</div>
+                        <div class = "skill">Placeholder</div>
+                    </div>
+                </div>
+                <!--Software dev skills-->
+                <div id = "Software-dev" class = "tab-content hidden">
+                    <div class = "content-wrapper"> 
+                        <div class = "skill">skill 1</div>
+                        <div class = "skill">skill 1</div>
+                        <div class = "skill">skill 1</div>
+                        <div class = "skill">skill 1</div>
+                        <div class = "skill">skill 1</div>
+                        <div class = "skill">skill 1</div>
+                    </div>
+                </div>
+                <!--Data science skills-->
+                <div id = "ML-dev" class = "tab-content hidden">
+                    <div class = "content-wrapper"> 
+                        <div class = "skill">skill 1</div>
+                        <div class = "skill">skill 1</div>
+                        <div class = "skill">skill 1</div>
+                        <div class = "skill">skill 1</div>
+                        <div class = "skill">skill 1</div>
+                        <div class = "skill">skill 1</div>
+                    </div>
+                </div>
+                <!--Web dev skills-->
+                <div id = "Web-dev" class = "tab-content hidden">
+                    <div class = "content-wrapper"> 
+                        <div class = "skill">skill 1</div>
+                        <div class = "skill">skill 1</div>
+                        <div class = "skill">skill 1</div>
+                        <div class = "skill">skill 1</div>
+                        <div class = "skill">skill 1</div>
+                        <div class = "skill">skill 1</div>
+                    </div>
+                </div>
+
+                <div class="projects-button"><button type="button">View Portfolio</button></div>
+            </div>
+        </div>
+
+        <!--TODO: createa  new page for portfolio-->
+        <div id = "Projects" class = "section">
+            <h3 class = "section-title">Projects</h3>
+            <br>
+            <button>View Portfolio</button>
+        </div>
+
+        <div id="Contact">
+            <h3 class="section-title">Contact</h3>
+            <br>
+            <ul class = "icons">
+                <li> <a  href = "https://github.com/divadyugi?tab=repositories"class="fab fa-github fa-4x"></a></li>
+                <li> <a  href=  "https://www.linkedin.com/in/david-daraban-180630195/" class="fab fa-linkedin fa-4x"></a></li>
+            </ul>
+
+            <dl class = "emails">
+                <dt>Emails</dt>
+                <dd><i class="fas fa-envelope"></i><a href = "mailto:daviddaraban5@gmail.com">daviddaraban5@gmail.com</a></dd>
+                <dd><i class="fas fa-envelope"></i><a href = "mailto:david.daraban@city.ac.uk">david.daraban@city.ac.uk</a></dd>
+            </dl>
+        </div>
+    </div>
+
+
+
+    <script type = "text/javascript" src = "js/basic.js"></script>
+</body>
+</html>
