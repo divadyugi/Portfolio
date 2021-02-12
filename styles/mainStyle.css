@@ -16,7 +16,7 @@ limitations under the License.
 
 
 *{
-    font-family: 'Ubuntu';
+    font-family: 'Lato', 'sans-serif';
 }
 
 html {
@@ -29,6 +29,9 @@ a{
 
 body{
     background-color: rgba(30,28,28,1);
+    background-image: url("../images/Background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /*Generic list layout to use*/
@@ -65,8 +68,10 @@ ul
     height: 700px;
     width: 100%;
     text-align: center;
-    padding-top: 450px;
+    padding-top: 350px;
     color: rgba(191,191,191,0.8);
+    font-weight: 800;
+    font-size: 1rem;
     /*font-size: 32px;*/
 
 
@@ -78,13 +83,26 @@ ul
     width: 50%;
     margin-left: 25%;
     padding-bottom: 10px;
-    background-color: rgba(255,255,255,0.03);
+    /*background-color: rgba(255,255,255,0.5);*/
     border-radius: 25px;
-    font-weight: 400;
-    color: rgba(191,191,191,0.8);
+    font-weight: 100;
+    color: rgb(60, 58, 58);
+    font-size: 3rem;
+    text-transform: uppercase;
     /*font-size: 44px;*/
+}
 
-
+#banner .side-text
+{
+    width: 50%;
+    margin-left: 25%;
+    padding-bottom: 10px;
+    /*background-color: rgba(255,255,255,0.5);*/
+    border-radius: 25px;
+    font-weight: 100;
+    color: rgb(60, 58, 58);
+    text-transform: none;
+    font-size: 1.25rem;
 }
 
 /*********SIDE NAVIGATION*********/
@@ -102,7 +120,7 @@ ul
     overflow-x: hidden;
 
 
-    background-color: rgba(30,28,28,1);
+    background-color: rgba(30,28,28,0.7);
     overflow: auto;
 
     /*Used for the side navigation buttons*/
@@ -158,6 +176,7 @@ ul
 {
     display: block;
     text-align: center;
+    text-transform: uppercase;
     font-size: 28px;
     font-size: calc(26px + (28 - 16) * ((100vw - 300px) / (1600 - 300)));
     border-bottom: 4px solid white;
@@ -255,7 +274,7 @@ ul
     margin: auto;
     height: 500px;
     width: 100%;
-    background: rgba(150,150,150,0.2);
+    background: rgba(180,180,180, 0.8);;
     color: white;
     font-weight: 400;
     grid-template-columns:40% 40% 20%;
@@ -268,7 +287,7 @@ ul
     box-shadow: rgba(0, 0, 0, 0.6) 2px 1px 2px;
     max-width: 100%;
     border-radius: 75%;
-    border: 2px solid black;
+    border: 1px solid black;
 
 }
 
@@ -277,17 +296,17 @@ ul
     grid-column-start: 0;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 3;
     justify-self: center;
-    align-self: baseline;
-    padding-top: 0.5rem;
+    align-self: center;
+    padding-bottom: 5rem;
 }
 
 .About-name
 {
     grid-column-start: 2;
     grid-column-end: span 5;
-    align-self: center;
+    align-self: right;
     justify-self: center;
     padding-top: 6rem;
     font-size: 32px;
@@ -297,16 +316,18 @@ ul
 
 .About-text
 {
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: span 6;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-row-end: 2;
-    justify-self: center;
+    justify-self: right;
     align-self: center;
-    font-size: calc(12px + (18 - 12) * ((100vw - 300px) / (1600 - 300)))
-
-
+    font-size: calc(12px + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
+    padding-top: 20rem;
+    padding-right: 1rem;
 }
+
+
 
 /*TODO: figure out a way to position the buttons when on mobile
 Consider placing them vertically*/
@@ -319,6 +340,7 @@ Consider placing them vertically*/
     align-self: center;
     padding-left: 15rem;
 
+
 }
 
 .About-buttons button
@@ -326,11 +348,13 @@ Consider placing them vertically*/
     outline: none;
     background-color: gray;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
     transition-duration: 0.5s;
     width: 10rem;
     height: 1.5rem;
     font-size: 18px;
+    color: white;
 }
 
 .About-buttons button:hover
@@ -351,7 +375,7 @@ Consider placing them vertically*/
     overflow: hidden;
     border: none;
     border-radius: 5px;
-    background-color: gray;
+    background-color: rgba(150,150,150,0.4);
 }
 
 /*The style for the individual skill buttons*/
@@ -361,7 +385,7 @@ Consider placing them vertically*/
 .btn-group button
 {
     outline: none;
-    background-color: gray;
+    background-color: rgba(150,150,150,0.6);
     border: none;
     color: white;
     padding: 10px 24px;
@@ -386,12 +410,12 @@ Consider placing them vertically*/
 }
 
 .btn-group button:hover{
-    background-color: rgba(150,150,150,0.5);
+    background-color: rgba(190,190,190,0.5);
 }
 
 .btn-group button.active
 {
-    background-color: rgba(150,150,150,0.5);
+    background-color: rgba(190,190,190,0.5);
 }
 
 /*Styling of the skill conetnts*/
@@ -418,6 +442,19 @@ Consider placing them vertically*/
 .skill{
     padding-top: 150px;
     font-size: calc(12px + (18 - 12) * ((100vw - 300px) / (1600 - 300)))
+}
+@media screen and (max-width: 600px)
+{
+    .skill
+    {
+        font-size: 12px;
+        margin-left: 1rem;
+    }
+}
+
+.skill img
+{
+    width: 10%;
 }
 
 /*When not viewed on mobile move it down by 1 rem*/
@@ -479,10 +516,21 @@ Consider placing them vertically*/
 
 
 /*********CONTACT SECTION*********/
+#Contact .section-title
+{
+    margin-bottom: -20px;
+}
+
 .icons
 {
-    float: right;
+    float: left;
     text-decoration: none;
+}
+
+.icons a
+{
+    text-decoration: none;
+    color: white;
 }
 
 ul.icons
@@ -495,7 +543,7 @@ ul.icons
 .icons li
 {
     display: inline-block;
-    padding: 0 0.75rem;
+    padding: 0.5rem 0.75rem;
     transition-duration: 0.8s;
 }
 
@@ -506,29 +554,31 @@ ul.icons
 
 .emails
 {
-    font-size: calc(24px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(18px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
     font-weight: 800;
     display: inline-block;
     float: left;
     padding-bottom: 2rem;
     text-decoration: none;
+    background-color: rgba(190,190,190,0.9);
+    width: 100%;
+    margin-top: 0px;
 }
 
 .emails a
 {
-    text-decoration: underline;
-    text-decoration-color: black;
-    color: gray;
+    text-decoration: none;
+    color: rgba(250, 250, 250, 0.8);
 }
 
 .emails i{
     padding-right: 1rem;
-    color: #bfbfb0;
+    color: rgba(250, 250, 250, 0.8);
 }
 
 .emails dt
 {
-    color: gray;
+    color: rgba(250, 250, 250, 0.8);
 }
 
 

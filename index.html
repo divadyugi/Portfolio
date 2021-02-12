@@ -23,7 +23,8 @@ limitations under the License.
     <title>David Daraban Portfolio</title>
     <link rel="styleSheet" type="text/css" href="styles/mainStyle.css"">
     <script src="https://kit.fontawesome.com/7bed07af9f.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     
     <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 </head>
@@ -32,7 +33,7 @@ limitations under the License.
     <!--Header-->
     <div id="banner">
         <h1 class = "banner-text">David Daraban
-        <div>Game Development + Software development</div></h1>
+        <div class = "side-text">Game Development + Software Development</div></h1>
     </div>
 
     <!--Main wrapper for page content-->
@@ -44,7 +45,6 @@ limitations under the License.
                 <li><a href="#banner">Home</a></li>
                 <li><a href="#About">About</a></li>
                 <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Projects">Projects</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
             <div id = "menuToggle" class = "">
@@ -58,7 +58,6 @@ limitations under the License.
                     <li><a href="#banner">Home</a></li>
                     <li><a href="#About">About</a></li>
                     <li><a href="#Skills">Skills</a></li>
-                    <li><a href="#Projects">Projects</a></li>
                     <li><a href="#Contact">Contact</a></li>
                 </ul>
             </div>
@@ -72,14 +71,17 @@ limitations under the License.
             <br>
             <div class="About-text-box">
                 <div class="About-top"><img src="/images/david.jfif"></div>
-                <div class="About-name">David Daraban</div>
-                <div class="About-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu orci nec nisi
-                    iaculis sodales vel eget libero. Proin turpis massa, consequat in finibus at, ullamcorper non risus.
-                    In non tempor nisl. Cras in tempus massa. Aenean at enim porta, imperdiet ipsum vel, elementum eros.
-                    Donec quis tempus odio, vitae semper orci. Quisque eu dui in lorem consectetur mollis. Ut non
-                    ultrices augue. Nunc at dapibus turpis, a malesuada ex. Fusce vestibulum congue mauris. Mauris
-                    bibendum orci mi, ut consequat odio commodo at. In hac habitasse platea dictumst. Orci varius
-                    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+                <!--<div class="About-name">David Daraban</div>-->
+                <div class="About-text">I’m David. I’m a third-year computer science student at City, University of London. I am currently searching for an entry-level job in Game development or software engineering after I finish my studies.
+                    <br>
+                    I have experience developing games using C++ game engines through an engine created by my university based on OpenGL.
+                    <br>
+                    I have experience developing games using C# with the unity game engine.
+                    <br>
+                    I have experience developing software using Java, JavaFX and the android studio SDK.
+                    I also have experienced integrating an SQLite database to software using java.
+                    <br>
+                    I am a kind and friendly, individual who loves working in a team and loves to work in a customer-centric environment. I have a very strong motivation for learning new skills and improving my current ones, and I am very intrigued by the technical challenges, and new technology that computer science exposes you to!</div>
                     <div class = "About-buttons">
                         <!--TODO: find a way to add responsiveness to the buttons, think about vertical layout with different size buttons-->
                         <a href = "David Daraban CV_portfolio.pdf" target = "_blank"><button class = "resume">Resume</button></a>
@@ -109,43 +111,31 @@ limitations under the License.
                     <div class = "content-wrapper">
                         <div class = "skill">C#</div>
                         <div class = "skill">C++</div>
-                        <div class = "skill">Unity</div>
-                        <div class = "skill">Unreal</div>
-                        <div class = "skill">Placeholder</div>
-                        <div class = "skill">Placeholder</div>
+                        <div class = "skill"><i class="fab fa-unity"></i>Unity</div>
+                        <div class = "skill">OpenGL</div>
                     </div>
                 </div>
                 <!--Software dev skills-->
                 <div id = "Software-dev" class = "tab-content hidden">
                     <div class = "content-wrapper"> 
-                        <div class = "skill">skill 1</div>
-                        <div class = "skill">skill 1</div>
-                        <div class = "skill">skill 1</div>
-                        <div class = "skill">skill 1</div>
-                        <div class = "skill">skill 1</div>
-                        <div class = "skill">skill 1</div>
+                        <div class = "skill">Java</div>
+                        <div class = "skill">SQL</div>
                     </div>
                 </div>
                 <!--Data science skills-->
                 <div id = "ML-dev" class = "tab-content hidden">
                     <div class = "content-wrapper"> 
-                        <div class = "skill">skill 1</div>
-                        <div class = "skill">skill 1</div>
-                        <div class = "skill">skill 1</div>
-                        <div class = "skill">skill 1</div>
-                        <div class = "skill">skill 1</div>
-                        <div class = "skill">skill 1</div>
+                        <div class = "skill">python</div>
+                        <div class = "skill">jupyter</div>
                     </div>
                 </div>
                 <!--Web dev skills-->
                 <div id = "Web-dev" class = "tab-content hidden">
                     <div class = "content-wrapper"> 
-                        <div class = "skill">skill 1</div>
-                        <div class = "skill">skill 1</div>
-                        <div class = "skill">skill 1</div>
-                        <div class = "skill">skill 1</div>
-                        <div class = "skill">skill 1</div>
-                        <div class = "skill">skill 1</div>
+                        <div class = "skill"><i class="fab fa-html5"></i>HTML</div>
+                        <div class = "skill"><i class="fab fa-css3"></i>CSS</div>
+                        <div class = "skill"><i class="fab fa-js"></i>Javascript</div>
+                        <div class = "skill"><i class="fab fa-node"></i>Node JS</div>
                     </div>
                 </div>
 
@@ -153,11 +143,11 @@ limitations under the License.
             </div>
         </div>
 
-        <div id = "Projects" class = "section">
+        <!--<div id = "Projects" class = "section">
             <h3 class = "section-title">Projects</h3>
             <br>
             <a href = "projects.html"><button>View Portfolio</button></a>
-        </div>
+        </div>-->
 
 
         
@@ -165,8 +155,8 @@ limitations under the License.
             <h3 class="section-title">Contact</h3>
             <br>
             <ul class = "icons">
-                <li> <a  href = "https://github.com/divadyugi?tab=repositories"class="fab fa-github fa-4x"></a></li>
-                <li> <a  href=  "https://www.linkedin.com/in/david-daraban-180630195/" class="fab fa-linkedin fa-4x"></a></li>
+                <li> <a  href = "https://github.com/divadyugi?tab=repositories"class="fab fa-github fa-2x"></a></li>
+                <li> <a  href=  "https://www.linkedin.com/in/david-daraban-180630195/" class="fab fa-linkedin fa-2x"></a></li>
             </ul>
 
             <dl class = "emails">
