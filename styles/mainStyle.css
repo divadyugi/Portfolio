@@ -29,9 +29,22 @@ a{
 
 body{
     background-color: rgba(30,28,28,1);
-    background-image: url("../images/Background.jpg");
+    /*Image from: https://www.pexels.com/photo/snow-covered-pine-trees-and-mountains-4504068/*/
+    background-image: url("../images/background_large.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+@media screen and (max-width: 1920px)
+{
+
+    body{
+        background-color: rgba(30,28,28,1);
+        /*Image from: https://www.pexels.com/photo/snow-covered-pine-trees-and-mountains-4504068/*/
+        background-image: url("../images/Background.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
 }
 
 /*Generic list layout to use*/
