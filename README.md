@@ -6,7 +6,6 @@ Full responsiveness for the projects on the projects page<br/>
 Background too small for monitors larger than 1920x1080, need to resize it for these cases.<br/>
 Text when hovering over projects appears on top rather than middle, make that a standard for all of them (possibly utilising grid display)<br/>
 Find a way to allow users to scroll past the bottom project, because if they can't the text is hard to read.<br/>
-Replace links for the projects page, instead create a display at the top that will have description of the project, and will also containt the links <br/>
 # Credits
 
 Background image: https://www.pexels.com/photo/snow-covered-pine-trees-and-mountains-4504068/
