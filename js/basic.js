@@ -75,3 +75,22 @@ function setActive(event)
 showSkill(selectedSkil);
 
 //#endregion
+
+
+//#region project display
+var projects = document.querySelectorAll(".display-project");
+function showProject(projectID)
+{
+    for(i = 0; i<projects.length; i++)
+    {
+        projects[i].classList.add("hidden");
+    }
+    var temp = document.querySelector("#"+projectID);
+    if(temp != null)
+    {
+        document.querySelector("#"+projectID).classList.remove("hidden");
+        
+    }
+}
+
+//#endregion

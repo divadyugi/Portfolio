@@ -52,68 +52,172 @@ limitations under the License.
                 </ul>
             </div>
         </div>
+        <!--Project displays-->
+        <div id = "Portfolio-display" class = " display-project ">
+            <div class = "project-display">
+                <div class = "project-image "><img src = "images/Portfolio_v3.png" alt = "Project-name"></div>
+                <div class = "project-title">Portfolio website</div>
+                <div class = "project-description">
+                    The webiste you are currently on<br>
+                    The website was designed with creative input from <a href = "https://www.instagram.com/soulfx_digital_art/">Harry Whiskerd</a><br>
+                    It was programmed by me alone, the source can be viewed on my github.
+                </div>
+                <div class = "project-footer">
+                    <a  href = "https://github.com/divadyugi/Portfolio"class="fab fa-github fa-4x"></a>
+                </div>
+            </div>
+        </div>
+        <div id = "ATS-display" class = " display-project hidden">
+            <div class = "project-display">
+                <div class = "project-image "><img src = "images/ATS_project.png" alt = "Project-name"></div>
+                <div class = "project-title">ATS Team project</div>
+                <div class = "project-description">
+                    <p>Database driven software created for my University's team project module.
+                        <br>
+                        Created alongside another programmer.
+                        <br>
+                        My contributions were the GUI design, functionality of the reports, sales, login, backup and restore, staff and customer maintenance.
+                    </p>
+                </div>
+                <div class = "project-footer">
+                    <a  href = "https://github.com/divadyugi/ATS_source_code"class="fab fa-github fa-4x"></a>
+                </div>
+            </div>
+        </div>
+        <div id = "OpenGL-display" class = " display-project hidden">
+            <div class = "project-display">
+                <div class = "project-image "><img src = "images/openGL.png" alt = "Project-name"></div>
+                <div class = "project-title">OpenGL game</div>
+                <div class = "project-description">
+                    <p>
+                    A game created by me using an opengl based engine created by my university
+                    </p>
+                </div>
+                <div class = "project-footer">
+                    <a  href = "https://github.com/divadyugi/University-OpenGL-game-project"class="fab fa-github fa-4x"></a>
+                </div>
+            </div>
+        </div>
+        <div id = "Ludum-display" class = " display-project hidden">
+            <div class = "project-display">
+                <div class = "project-image "><img src = "images/lastEmber.png" alt = "Project-name"></div>
+                <div class = "project-title">Last Embers</div>
+                <div class = "project-description">
+                    <p>
+                        A game made in 3 days with a team of 3 people for the Ludum Dare 46 game jam
+                        <br>
+                        The game was created in Unity, it was the second game I created with unity.
+                        <br>
+                        Programmer: David Daraban
+                        <br>
+                        Environment assets: Keldon Israel
+                        <br>
+                        Character art and GUI: Joshua Carter
+                    </p>
+                </div>
+                <div class = "project-footer">
+                    <a  href = "https://github.com/divadyugi/Last_Embers"class="fab fa-github fa-4x"></a>
+                    <a  href = "https://fireduogames.itch.io/last-embers"class="fab fa-itch-io fa-4x"></a>
+                </div>
+            </div>
+        </div>
+        <div id = "Expenditure-display" class = " display-project hidden">
+            <div class = "project-display">
+                <div class = "project-image "><img src = "images/expenditureManager.png" alt = "Project-name"></div>
+                <div class = "project-title">Expenditure Manager</div>
+                <div class = "project-description">
+                    <p>
+                        A database driven android application.
+                        <br>
+                        Created using java, and android studio layout editor(xml) for the layouts.
+                        <br>
+                        Created in one week as a practice project for learning Android Studio.
+                    </p>
+                </div>
+                <div class = "project-footer">
+                    <a  href = "https://github.com/divadyugi/Expenditure-Manager"class="fab fa-github fa-4x"></a>
+                    <a href = "https://play.google.com/store/apps/details?id=com.david.expendituresv3" class="fab fa-google-play fa-4x"></a>
+                </div>
+            </div>
+        </div>
+        <div id = "Till-display" class = " display-project hidden">
+            <div class = "project-display">
+                <div class = "project-image "><img src = "images/tillSystem.png" alt = "Project-name"></div>
+                <div class = "project-title">Portfolio website</div>
+                <div class = "project-description">
+                    <p>
+                        My first javafx application.
+                        <br>
+                        This application is meant to model a tillsystem for a restaurant.
+                    </p>
+                </div>
+                <div class = "project-footer">
+                    <a  href = "https://github.com/divadyugi/Till-system"class="fab fa-github fa-4x"></a>
+                </div>
+            </div>
+        </div>
 
         <!--Each project will have an image that it will display
             Each image should be 300x300? (size needs testing)
             Will have a middle text displayed when hoeverd over-->
-            <a href = "https://github.com/divadyugi/Portfolio">
+            <a href = #Portfolio-display onclick=showProject("Portfolio-display")>
                 <div class = "project">
                     <img src = "images/Portfolio_v3.png" alt = "Project-name">
                     <div class = "title">
                         <div class = "text">Portfolio Website</div>
-                        <br>
-                        <div class = "description text">The portfolio website created by me</div>
+                        <!--<br>
+                        <div class = "description text">The portfolio website created by me</div>-->
                     </div>
                 </div>    
             </a>
-            <a href = "https://github.com/divadyugi/ATS_source_code">
+            <a href = #ATS-display onclick=showProject("ATS-display")>
                 <div class = "project">
                     <img src = "images/ATS_project.png" alt = "ATS-project">
                     <div class = "title">
                         <div class = "text">ATS TEAM PROJECT</div>
-                        <br>
+                        <!--<br>
                         <div class = "description text">Database driven software for my     university's team project module
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </a>
-            <a href = "https://github.com/divadyugi/University-OpenGL-game-project">
+            <a href = #OpenGL-display onclick=showProject("OpenGL-display")>
                 <div class = "project">
                     <img src = "images/openGL.png" alt = "Project-name">
                     <div class = "title">
                         <div class = "text">OpenGL Game</div>
-                        <br>
-                        <div class = "description text">A game created with an openGL based engine created by my university</div>
+                        <!--<br>
+                        <div class = "description text">A game created with an openGL based engine created by my university</div>-->
                     </div>
                 </div>    
             </a>
-            <a href = "https://github.com/divadyugi/Last_Embers">
+            <a href = #Ludum-display onclick=showProject("Ludum-display")>
                 <div class = "project">
                     <img src = "images/lastEmber.png" alt = "Project-name">
                     <div class = "title">
                         <div class = "text">Last Embers</div>
-                        <br>
-                        <div class = "description text">A game made using Unity in 3 days, with a team of 3 people for the Ludum Dare 46 game jam</div>
+                        <!--<br>
+                        <div class = "description text">A game made using Unity in 3 days, with a team of 3 people for the Ludum Dare 46 game jam</div>-->
                     </div>
                 </div>    
             </a>
-            <a href = "https://github.com/divadyugi/Expenditure-Manager">
+            <a href = #Expenditure-display onclick=showProject("Expenditure-display")>
                 <div class = "project">
                     <img src = "images/expenditureManager.png" alt = "Project-name">
                     <div class = "title">
                         <div class = "text">Expenditure Manager</div>
-                        <br>
-                        <div class = "description text">A database driven android application created using java, and android studio layout editor(xml)</div>
+                        <!--<br>
+                        <div class = "description text">A database driven android application created using java, and android studio layout editor(xml)</div>-->
                     </div>
                 </div>    
             </a>
-            <a href = "https://github.com/divadyugi/Till-system">
+            <a href = #Till-display onclick=showProject("Till-display")>
                 <div class = "project">
                     <img src = "images/tillSystem.png" alt = "Project-name">
                     <div class = "title">
                         <div class = "text">Till System</div>
-                        <br>
-                        <div class = "description text">My first javaFX application. This application is meant to model a till system for a restaurant</div>
+                        <!--<br>
+                        <div class = "description text">My first javaFX application. This application is meant to model a till system for a restaurant</div>-->
                     </div>
                 </div>    
             </a>

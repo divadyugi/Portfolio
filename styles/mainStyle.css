@@ -597,6 +597,138 @@ ul.icons
 
 
 /*********PROJECTS PAGE*********/
+.project-display
+{
+    margin-top: 2rem;
+    padding-top: 10px;
+    width:100%;
+    height: 600px;
+    background-color: rgba(125,125,125,0.8);
+    display: grid;
+    grid-template-columns: 20px 40% auto 20px;
+    grid-template-rows: 10% 75% 10%;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+@media screen and (max-width: 450px )
+{
+    .project-display
+    {
+        margin-top: 2rem;
+        padding-top: 10px;
+        width:100%;
+        height: 600px;
+        background-color: rgba(125,125,125,0.8);
+        display: grid;
+        grid-template-columns: 10px 30% auto 10px;
+        grid-template-rows: 20% 65% 10%;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    
+}
+
+.project-image
+{
+    /*background-color: red;*/
+    grid-column: 2/3;
+    grid-row: 1/4;
+    align-self: center;
+    justify-self: center;
+}
+.project-image img
+{
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+@media screen and (max-width: 450px)
+{
+    .project-image
+    {
+        /*background-color: pink;*/
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+}
+
+.project-title
+{
+    /*background-color: blue;*/
+    grid-column: 3/4;
+    grid-row: 1;
+    color: white;
+    align-self: center;
+    justify-self: center;
+    font-size: calc(18px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+@media screen and (max-width: 450px)
+{
+    .project-title
+    {
+       /* background-color: blue;*/
+        grid-column: 3/5;
+        grid-row: 1;
+    }
+}
+
+.project-description
+{
+    /*background-color: green;*/
+    grid-column: 3/4;
+    grid-row: 2;
+    color: white;
+    font-size: calc(18px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+    align-self: center;
+    justify-self: center;
+}
+
+.project-description a
+{
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 450px)
+{
+    .project-description
+    {
+        /*background-color: green;*/
+        grid-column: 2/4;
+        grid-row: 2;
+    }
+
+    .project-description a
+    {
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.project-footer
+{
+    /*background-color: violet;*/
+    grid-column: 3/4;
+    grid-row: 3;
+    justify-self: center;
+}
+.project-footer a
+{
+    color: white;
+}
+
+@media screen and (max-width: 450px)
+{
+    .project-footer
+    {
+        /*background-color: violet;*/
+        grid-column: 2/4;
+        grid-row: 3;
+    }
+}
+
 .project
 {
     width: 45%;
@@ -604,6 +736,8 @@ ul.icons
     float: left;
     margin: 1.66%;
 }
+
+
 .project img
 {
     max-width: 100%;
